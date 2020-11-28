@@ -10,6 +10,7 @@ function App() {
         
         {/* chatbar */}
 
+        {/* nothing */}
       </div>
     </div>
   );
