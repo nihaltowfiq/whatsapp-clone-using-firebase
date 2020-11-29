@@ -14,7 +14,7 @@ const ChatBar = () => {
   }, []);
 
   const handleSendMessage = (e) => {
-    e.PreventDefault();
+    e.preventDefault();
     setInput("");
   };
 
@@ -40,7 +40,8 @@ const ChatBar = () => {
       </div>
       <div className="chat-body">
         <p className={`chat-messages ${true && "chat-receiver"}`}>
-          <span className="chat-name">sm tareq</span> hey guys
+          <span className="chat-name">sm tareq</span> 
+          hey guys
           <span className="chat-time">3:20pm</span>
         </p>
       </div>
