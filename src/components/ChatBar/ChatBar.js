@@ -1,11 +1,12 @@
-import React from 'react';
+import React from "react";
+import "./ChatBar.scss";
 
 const ChatBar = () => {
-    return (
-        <div>
-            
-        </div>
-    );
+  return (
+    <div>
+      <h1>this is chatBar</h1>
+    </div>
+  );
 };
 
 export default ChatBar;
