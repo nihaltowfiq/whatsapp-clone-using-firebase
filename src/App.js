@@ -1,5 +1,6 @@
 import "./App.scss";
 import SideBar from "./components/SideBar/SideBar";
+import ChatBar from "./components/ChatBar/ChatBar";
 
 function App() {
   return (
@@ -7,8 +8,8 @@ function App() {
       <div className="app__body">
         {/* sidebar */}
         <SideBar />
-
         {/* chatbar */}
+        <ChatBar />
 
         {/* nothing */}
       </div>
