@@ -1,13 +1,13 @@
-import './App.scss';
+import "./App.scss";
+import SideBar from "./components/SideBar/SideBar";
 
 function App() {
   return (
     <div className="app">
-      <h1>This is Whatsapp Clone</h1>
       <div className="app__body">
-
         {/* sidebar */}
-        
+        <SideBar />
+
         {/* chatbar */}
 
         {/* nothing */}
