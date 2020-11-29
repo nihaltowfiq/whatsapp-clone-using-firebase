@@ -1,5 +1,5 @@
 .chat {
-  flex: 0.65;
+  flex: 0.70;
   display: flex;
   flex-direction: column;
 }
@@ -9,7 +9,6 @@
   align-items: center;
   border-bottom: 1px solid lightgrey;
 }
-
 .chat-messages {
   position: relative;
   font-size: 16px;
@@ -55,7 +54,7 @@
   background-repeat: repeat;
   background-position: center;
   padding: 30px;
-  overflow: scroll;
+  overflow-y: scroll;
 }
 .chat-footer {
   display: flex;
