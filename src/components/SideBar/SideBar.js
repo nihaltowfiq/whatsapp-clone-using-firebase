@@ -10,16 +10,18 @@ import db from "../FirebaseFiles/firebase";
 
 const SideBar = () => {
   const [rooms, setRooms] = useState([]);
+
   useEffect(() => {
-    db.collection('rooms').onSnapshot(snapshot => (
-      setRooms(snapshot.docs.map(doc =>
-        ({
+    db.collection("rooms").onSnapshot((snapshot) =>
+      setRooms(
+        snapshot.docs.map((doc) => ({
           id: doc.id,
-          data: doc.data()
-        })
-      ))
-    ))
-  }, [])
+          data: doc.data(),
+        }))
+      )
+    );
+  }, []);
+
   return (
     <div className="sidebar">
       <div className="sidebar_header">
@@ -44,11 +46,9 @@ const SideBar = () => {
       </div>
       <div className="sidebar_chats">
         <SideBarChat addNewChat />
-        {
-          rooms.map(room => (
-            <SideBarChat key={room.id} id={room.id} name={room.data.name} />
-          ))
-        }
+        {rooms.map((room) => (
+          <SideBarChat key={room.id} id={room.id} name={room.data.name} />
+        ))}
       </div>
     </div>
   );
