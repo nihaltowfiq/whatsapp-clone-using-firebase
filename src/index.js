@@ -3,7 +3,7 @@ import ReactDOM from "react-dom";
 import "./index.scss";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
-import reducer, { initialState } from "./components/FirebaseFiles/reducer";
+import reducer, { initialState } from "./components/FirebaseFiles/Reducer";
 import { StateProvider } from "./components/FirebaseFiles/StateProvider";
 
 ReactDOM.render(
